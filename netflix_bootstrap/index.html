@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Netflix BOOTSTRAP</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="Logo" width="80" height="40" id="logo">
+                </a>
+                <!-- Toggler per dispositivi mobili -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">New & Popular</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+                    </ul>
+                    <div class="d-flex gap-3 align-items-center">
+                        <img src="./assets/imgs/search.png" alt="search" class="icon-nav">
+                        <p class="mb-0 text-white d-none d-md-block">KIDS</p> <!-- Nasconde il testo su mobile -->
+                        <img src="./assets/imgs/bell-notifica.png" alt="bell" class="icon-nav">
+                        <img src="./assets/imgs/manage-account.png" alt="manage-account" class="icon-nav">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero-section d-flex flex-column flex-md-row align-items-center p-3 bg-dark">
+            <h1 class="me-3 text-white text-center text-md-start">TV Shows</h1>
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Adventure</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Dynamic movie sections -->
+        <div id="dynamic-movie-sections" class="container my-5"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-4">
+        <div class="container">
+            <div class="footer-links d-flex flex-wrap justify-content-center gap-4">
+                <a href="#" id="link1" class="text-white"></a>
+                <a href="#" id="link2" class="text-white"></a>
+                <a href="#" id="link3" class="text-white"></a>
+                <a href="#" id="link4" class="text-white"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

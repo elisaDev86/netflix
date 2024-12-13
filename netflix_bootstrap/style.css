@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+    /* Nero puro */
+    color: #fff;
+    /* Testo bianco per contrasto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Rendi neri anche i container principali */
+.container {
+    background-color: #000;
+}
+
+
+
+#logo {
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar .d-flex p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.icon-nav {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.icon-nav:hover {
+    transform: scale(1.2);
+}
+
+
+.card {
+    background-color: #222;
+    color: white;
+    border: none;
+    height: 250px;
+    /* Altezza personalizzata */
+}
+
+.card-img-top {
+    height: 150px;
+    /* Altezza immagini */
+    object-fit: cover;
+    /* Adatta l'immagine al contenitore */
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+/*
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    margin-right: 10px;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button-left {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.carousel-button-right {
+    right: 10px;
+    transform: translateY(-50%);
+}*/
+
+/* Stili per il footer */
+footer {
+    background-color: #000 !important;
+    /* Nero per il footer */
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-links a:hover {
+    color: white;
+}
